@@ -16,7 +16,11 @@ class FizzTest {
 
 	@Test
 	void testFizzUn() {
-		assertEquals(1, fb.fizzBuzz(1));
+		assertEquals("1", fb.fizzBuzz(1));
 	}
-
+	
+	@Test
+	void testFizzDeux() {
+		assertEquals("2", fb.fizzBuzz(2));
+	}
 }

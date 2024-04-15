@@ -2,7 +2,7 @@ package Fizz;
 
 public class Fizz {
 
-	public int fizzBuzz(int i) {
-		return 1;
+	public Object fizzBuzz(int i) {
+		return Integer.toString(i);
 	}
 }
