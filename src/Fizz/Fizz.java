@@ -7,7 +7,7 @@ public class Fizz {
 	
 	public Object fizzBuzz(int tour) {
 		for(int i = 0; i < 2; i++) {
-			if(tour == MAGIC_NUM[i]) {
+			if(tour % MAGIC_NUM[i] == 0) {
 				return MAGIC_WORD[i];
 			}
 		}

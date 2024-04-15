@@ -30,7 +30,15 @@ class FizzTest {
 	}
 	
 	@Test
-	void testCinq() {
+	void testFizzCinq() {
 		assertEquals("buzz", fb.fizzBuzz(5));
+	}
+	
+	@Test
+	void testMultipleDe3ou5() {
+		assertEquals("fizz", fb.fizzBuzz(6));
+		assertEquals("buzz", fb.fizzBuzz(10));
+		assertEquals("fizz", fb.fizzBuzz(12));
+		assertEquals("buzz", fb.fizzBuzz(400));
 	}
 }
