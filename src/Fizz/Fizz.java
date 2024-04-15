@@ -6,12 +6,15 @@ public class Fizz {
 	private String[] MAGIC_WORD = {"fizz", "buzz"};
 	
 	public Object fizzBuzz(int tour) {
+		StringBuilder reponse = new StringBuilder();
 		for(int i = 0; i < 2; i++) {
 			if(tour % MAGIC_NUM[i] == 0) {
-				return MAGIC_WORD[i];
+				reponse.append(MAGIC_WORD[i]);
 			}
 		}
-		
-		return Integer.toString(tour);
+		if(reponse.length() == 0) {
+			reponse.append(tour);
+		}
+		return reponse.toString();
 	}
 }

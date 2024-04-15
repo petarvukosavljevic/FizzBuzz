@@ -41,4 +41,12 @@ class FizzTest {
 		assertEquals("fizz", fb.fizzBuzz(12));
 		assertEquals("buzz", fb.fizzBuzz(400));
 	}
+	
+	@Test
+	void testMultipleDe3et5() {
+		assertEquals("fizzbuzz", fb.fizzBuzz(15));
+		assertEquals("fizzbuzz", fb.fizzBuzz(30));
+		assertEquals("fizzbuzz", fb.fizzBuzz(120));
+		assertEquals("fizzbuzz", fb.fizzBuzz(150));
+	}
 }
